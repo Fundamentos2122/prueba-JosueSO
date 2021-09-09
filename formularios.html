@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        [name="conditions"]:checked {
+            margin-left: 50px;
+        }
+
+        input:focus {
+            box-shadow: 2px 2px 20px red;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        #boton_fake {
+            border: 1px solid darkgray;
+            border-radius: 2px;
+        }
+
+        #boton_fake:hover {
+            cursor: pointer;
+        }
+
+        input:required {
+            color: darkred;
+        }
+
+        #p_aux::before {
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            content: '\f0e7';
+        }
+
+        #p_aux::first-letter {
+            text-transform: uppercase;
+            font-size: 32px;
+        }
+
+        #p_aux::first-line {
+            color: blue;
+        }
+
+        #p_aux::selection {
+            background-color: yellow;
+        }
+
+        p#ejemplo.p2 {
+            color:violet
+        }
+
+        .p1 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="username">Nombre de usuario</label>
+        <input type="text" name="username" autocomplete="off">
+        <br>
+        <label for="birthday">Fecha de nacimiento</label>
+        <input type="date" name="birthday">
+        <br>
+        <label for="age">Edad</label>
+        <input type="number" name="age" step="0.5" required>
+        <br>
+        <input type="checkbox" name="conditions">
+        <label for="conditions">Acepta los términos y condiciones</label>
+        <br>
+        <label for="color">Color favorito</label>
+        <input type="color" name="color">
+        <br>
+        <label for="password">Contraseña</label>
+        <input type="password" name="password">
+        <br>
+        <label for="semester">Semestre</label>
+        <br>
+        <input type="radio" name="semester">
+        <label>Primer semestre</label>
+        <input type="radio" name="semester">
+        <label>Segundo semestre</label>
+        <input type="radio" name="semester">
+        <label>Tercero semestre</label>
+        <input type="radio" name="semester">
+        <label>Cuarto semestre</label>
+        <br><br>
+        <label for="description">Descripción</label>
+        <br>
+        <textarea name="desciption" cols="30" rows="10">Hola mundo</textarea>
+        <br>
+        <label for="select">Seleccionar</label>
+        <select name="select">
+            <option value="1">Primer elemento</option>
+            <option value="2">Segundo elemento</option>
+            <option value="3">Tercero elemento</option>
+        </select>
+        <br>
+        <input type="submit" value="Enviar">
+        <button type="button">Guardar</button>
+    </form>
+    <button>Otro botón</button>
+    <br>
+    <br>
+    <p id="boton_fake">Presiona aquí</p>
+
+    <p id="p_aux">lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, perspiciatis pariatur accusamus quae doloribus dicta sapiente at ipsa praesentium quaerat! Reprehenderit fugiat id magnam laudantium tempora aspernatur quia quibusdam maiores.</p>
+
+    <p id="ejemplo" class="p1 p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti optio corrupti atque nostrum eligendi aliquid consequatur sed tempora, consequuntur neque, quisquam veritatis, dolorem aperiam natus modi ratione quibusdam? Nam, voluptate!</p>
+</body>
+</html>
